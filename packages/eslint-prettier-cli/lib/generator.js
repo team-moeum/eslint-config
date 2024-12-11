@@ -50,24 +50,8 @@ async function generator() {
     ]);
 
     const selectedTemplate = answer.template;
-    switch (selectedTemplate) {
-      case "base":
-        console.log("Generating base configuration...");
-        copyFiles(selectedTemplate);
-        break;
-      case "react":
-        console.log("Generating React configuration...");
-        break;
-      case "next":
-        console.log("Generating Next.js configuration...");
-        break;
-      case "rn":
-        console.log("Generating React Native configuration...");
-        break;
-      case "nest":
-        console.log("Generating Nest.js configuration...");
-        break;
-    }
+    console.log(`Generating ${selectedTemplate} configuration...`);
+    copyFiles(selectedTemplate);
   } catch (err) {
     console.error("Error", err);
   }
