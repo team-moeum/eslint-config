@@ -34,7 +34,7 @@ async function copyFiles(templateName) {
 async function generator() {
   try {
     console.log(
-      "Welcome to Moeum ESLint + Prettier configuration generator!\n",
+      `Welcome to Moeum ESLint + Prettier configuration generator!\n`,
     );
 
     const answer = await inquirer.prompt([

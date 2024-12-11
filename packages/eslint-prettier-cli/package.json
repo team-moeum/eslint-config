@@ -1,13 +1,17 @@
 {
-  "name": "moeum-eslint-prettier-cli",
-  "version": "1.0.0",
-  "description": "",
-  "bin": {
-    "moeum-eslint-prettier-cli": "./lib/index.js"
+  "name": "@moeum/eslint-prettier-cli",
+  "version": "1.0.7",
+  "publishConfig": {
+    "access": "public"
   },
-  "main": "index.js",
+  "description": "eslint-prettier-cli by moeum",
+  "bin": {
+    "eslint-prettier-cli": "lib/index.js"
+  },
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "pnpm publish --access public --no-git-checks"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +19,17 @@
   "dependencies": {
     "inquirer": "^12.2.0"
   },
-  "type": "module"
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-moeum/moeum-eslint-prettier-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/team-moeum/moeum-eslint-prettier-toolkit/issues"
+  },
+  "homepage": "https://github.com/team-moeum/moeum-eslint-prettier-toolkit#readme"
 }
