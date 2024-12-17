@@ -1,6 +1,6 @@
 {
   "name": "@moeum/eslint-rn-expo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publishConfig": {
     "access": "public"
   },
@@ -21,7 +21,9 @@
   },
   "peerDependencies": {
     "typescript": "*",
-    "expo": "*"
+    "expo": "*",
+    "eslint": "*",
+    "prettier": "*"
   },
   "type": "module",
   "directories": {
