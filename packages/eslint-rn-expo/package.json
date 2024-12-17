@@ -1,0 +1,38 @@
+{
+  "name": "@moeum/eslint-rn-expo",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "@moeum/eslint-rn-expo by moeum",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "pnpm publish --access public --no-git-checks"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@moeum/eslint-react": "workspace:*",
+    "expo": "*",
+    "eslint": "*",
+    "prettier": "*"
+  },
+  "peerDependencies": {
+    "typescript": "*",
+    "expo": "*"
+  },
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-moeum/moeum-eslint-prettier-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/team-moeum/moeum-eslint-prettier-toolkit/issues"
+  },
+  "homepage": "https://github.com/team-moeum/moeum-eslint-prettier-toolkit#readme"
+}

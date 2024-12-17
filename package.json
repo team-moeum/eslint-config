@@ -9,7 +9,8 @@
     "publish:cli": "turbo run deploy --filter=@moeum/eslint-prettier-cli",
     "publish:base": "turbo run deploy --filter=@moeum/eslint-base",
     "publish:react": "turbo run deploy --filter=@moeum/eslint-react",
-    "publish:next": "turbo run deploy --filter=@moeum/eslint-next"
+    "publish:next": "turbo run deploy --filter=@moeum/eslint-next",
+    "publish:rn-expo": "turbo run deploy --filter=@moeum/eslint-rn-expo"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
