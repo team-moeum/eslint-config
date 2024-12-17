@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   env: { browser: true, es2021: true, node: true },
   parser: "@typescript-eslint/parser",
   extends: [
@@ -24,23 +24,6 @@ export default {
     "no-console": "error",
     "no-empty": "error",
     curly: "error",
-    "import/order": [
-      "error",
-      {
-        groups: ["builtin", "external", ["parent", "sibling"], "index"],
-        pathGroups: [
-          {
-            pattern: "@",
-            group: "internal",
-            position: "after",
-          },
-        ],
-        alphabetize: {
-          order: "asc",
-          caseInsensitive: true,
-        },
-      },
-    ],
     "no-redeclare": "off",
     "@typescript-eslint/array-type": ["error", { default: "array" }],
     "@typescript-eslint/ban-tslint-comment": "error",
