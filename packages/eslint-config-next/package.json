@@ -1,31 +1,35 @@
 {
-  "name": "@moeum/eslint-next",
+  "name": "@moeum/eslint-config-next",
   "version": "1.0.1",
   "publishConfig": {
     "access": "public"
   },
-  "description": "@moeum/eslint-next by moeum",
-  "main": "./lib/index.js",
+  "description": "@moeum/eslint-config-next by moeum",
+  "main": "./lib/index.cjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "pnpm publish --access public --no-git-checks"
   },
+  "files": [
+    "lib"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@moeum/eslint-react": "workspace:*",
+    "@moeum/eslint-config-react": "workspace:*",
     "next": "*",
-    "eslint": "*",
+    "eslint": "^8",
     "prettier": "*"
   },
   "peerDependencies": {
     "typescript": "*",
     "react": "*",
     "next": "*",
-    "eslint": "*"
+    "eslint": "^8",
+    "prettier": "*"
   },
-  "type": "module",
+  "type": "commonjs",
   "directories": {
     "lib": "lib"
   },
