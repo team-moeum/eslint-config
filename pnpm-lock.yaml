@@ -126,6 +126,27 @@ importers:
         specifier: '*'
         version: 5.5.4
 
+  packages/eslint-config-next:
+    dependencies:
+      '@moeum/eslint-config-react':
+        specifier: workspace:*
+        version: link:../eslint-react
+      eslint:
+        specifier: ^8
+        version: 8.57.1
+      next:
+        specifier: '*'
+        version: 15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      prettier:
+        specifier: '*'
+        version: 3.3.3
+      react:
+        specifier: '*'
+        version: 19.0.0
+      typescript:
+        specifier: '*'
+        version: 5.5.4
+
   packages/eslint-nest:
     dependencies:
       '@moeum/eslint-base':
