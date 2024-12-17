@@ -6,7 +6,12 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "publish:cli": "turbo run deploy --filter=@moeum/eslint-prettier-cli"
+    "publish:cli": "turbo run deploy --filter=@moeum/eslint-prettier-cli",
+    "publish:base": "turbo run deploy --filter=@moeum/eslint-config-base",
+    "publish:react": "turbo run deploy --filter=@moeum/eslint-config-react",
+    "publish:next": "turbo run deploy --filter=@moeum/eslint-config-next",
+    "publish:rn-expo": "turbo run deploy --filter=@moeum/eslint-config-rn-expo",
+    "publish:nest": "turbo run deploy --filter=@moeum/eslint-config-nest"
   },
   "devDependencies": {
     "prettier": "^3.2.5",

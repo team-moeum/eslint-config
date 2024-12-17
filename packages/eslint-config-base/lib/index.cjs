@@ -1,34 +1,34 @@
-{
-  "env": { "browser": true, "es2021": true, "node": true },
-  "parser": "@typescript-eslint/parser",
-  "extends": [
+module.exports = {
+  env: { browser: true, es2021: true, node: true },
+  parser: "@typescript-eslint/parser",
+  extends: [
     "eslint:recommended",
     "plugin:prettier/recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
   ],
-  "plugins": ["@typescript-eslint", "prettier"],
-  "parserOptions": {
-    "sourceType": "module"
+  plugins: ["@typescript-eslint", "prettier"],
+  parserOptions: {
+    sourceType: "module",
   },
-  "overrides": [
+  overrides: [
     {
-      "files": ["**/*.ts?(x)"],
-      "parser": "@typescript-eslint/parser"
-    }
+      files: ["**/*.ts?(x)"],
+      parser: "@typescript-eslint/parser",
+    },
   ],
-  "rules": {
-    "consistent-return": ["error", { "treatUndefinedAsUnspecified": true }],
+  rules: {
+    "consistent-return": ["error", { treatUndefinedAsUnspecified: true }],
     "default-case-last": "error",
     "no-var": "error",
     "no-console": "error",
     "no-empty": "error",
-    "curly": "error",
+    curly: "error",
     "no-redeclare": "off",
-    "@typescript-eslint/array-type": ["error", { "default": "array" }],
+    "@typescript-eslint/array-type": ["error", { default: "array" }],
     "@typescript-eslint/ban-tslint-comment": "error",
     "@typescript-eslint/consistent-indexed-object-style": [
       "error",
-      "index-signature"
+      "index-signature",
     ],
     "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     "@typescript-eslint/consistent-type-imports": "error",
@@ -36,14 +36,14 @@
     "@typescript-eslint/naming-convention": [
       "error",
       {
-        "selector": "typeLike",
-        "format": ["PascalCase"]
-      }
+        selector: "typeLike",
+        format: ["PascalCase"],
+      },
     ],
     "@typescript-eslint/no-for-in-array": "error",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-redeclare": "error",
     "@typescript-eslint/no-unused-expressions": "off",
-    "@typescript-eslint/no-inferrable-types": "error"
-  }
-}
+    "@typescript-eslint/no-inferrable-types": "error",
+  },
+};

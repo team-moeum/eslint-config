@@ -1,14 +1,14 @@
 {
-  "name": "@moeum/eslint-prettier-cli",
-  "version": "1.0.9",
+  "name": "@moeum/eslint-config-base",
+  "version": "1.0.4",
   "publishConfig": {
     "access": "public"
   },
-  "description": "eslint-prettier-cli by moeum",
-  "bin": {
-    "eslint-prettier-cli": "lib/index.js"
-  },
-  "main": "./lib/index.js",
+  "description": "@moeum/eslint-config-base by moeum",
+  "main": "./lib/index.cjs",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "pnpm publish --access public --no-git-checks"
@@ -17,13 +17,23 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^12.2.0"
+    "@typescript-eslint/parser": "^8.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint": "^8",
+    "prettier": "*"
   },
-  "type": "module",
+  "peerDependencies": {
+    "typescript": "*",
+    "eslint": "^8",
+    "prettier": "*"
+  },
+  "type": "commonjs",
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/team-moeum/moeum-eslint-prettier-toolkit.git"

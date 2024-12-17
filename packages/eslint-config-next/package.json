@@ -1,29 +1,38 @@
 {
-  "name": "@moeum/eslint-prettier-cli",
-  "version": "1.0.9",
+  "name": "@moeum/eslint-config-next",
+  "version": "1.0.1",
   "publishConfig": {
     "access": "public"
   },
-  "description": "eslint-prettier-cli by moeum",
-  "bin": {
-    "eslint-prettier-cli": "lib/index.js"
-  },
-  "main": "./lib/index.js",
+  "description": "@moeum/eslint-config-next by moeum",
+  "main": "./lib/index.cjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "pnpm publish --access public --no-git-checks"
   },
+  "files": [
+    "lib"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^12.2.0"
+    "@moeum/eslint-config-react": "workspace:*",
+    "next": "*",
+    "eslint": "^8",
+    "prettier": "*"
   },
-  "type": "module",
+  "peerDependencies": {
+    "typescript": "*",
+    "react": "*",
+    "next": "*",
+    "eslint": "^8",
+    "prettier": "*"
+  },
+  "type": "commonjs",
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/team-moeum/moeum-eslint-prettier-toolkit.git"
