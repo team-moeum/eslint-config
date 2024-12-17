@@ -8,7 +8,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "publish:cli": "turbo run deploy --filter=@moeum/eslint-prettier-cli",
     "publish:base": "turbo run deploy --filter=@moeum/eslint-config-base",
-    "publish:react": "turbo run deploy --filter=@moeum/eslint-react",
+    "publish:react": "turbo run deploy --filter=@moeum/eslint-config-react",
     "publish:next": "turbo run deploy --filter=@moeum/eslint-next",
     "publish:rn-expo": "turbo run deploy --filter=@moeum/eslint-rn-expo",
     "publish:nest": "turbo run deploy --filter=@moeum/eslint-config-nest"

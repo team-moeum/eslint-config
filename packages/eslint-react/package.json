@@ -1,11 +1,14 @@
 {
-  "name": "@moeum/eslint-react",
+  "name": "@moeum/eslint-config-react",
   "version": "1.0.1",
   "publishConfig": {
     "access": "public"
   },
-  "description": "@moeum/eslint-react by moeum",
-  "main": "./lib/index.js",
+  "description": "@moeum/eslint-config-react by moeum",
+  "main": "./lib/index.cjs",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "pnpm publish --access public --no-git-checks"
@@ -14,8 +17,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@moeum/eslint-base": "workspace:*",
-    "eslint": "*",
+    "@moeum/eslint-config-base": "workspace:*",
+    "eslint": "^8",
     "prettier": "*",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
@@ -25,10 +28,10 @@
   "peerDependencies": {
     "typescript": "*",
     "react": "*",
-    "eslint": "*",
+    "eslint": "^8",
     "prettier": "*"
   },
-  "type": "module",
+  "type": "commonjs",
   "directories": {
     "lib": "lib"
   },
