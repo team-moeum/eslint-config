@@ -1,11 +1,14 @@
 {
-  "name": "@moeum/eslint-nest",
+  "name": "@moeum/eslint-config-nest",
   "version": "1.0.1",
   "publishConfig": {
     "access": "public"
   },
-  "description": "@moeum/eslint-nest by moeum",
-  "main": "./lib/index.js",
+  "description": "@moeum/eslint-config-nest by moeum",
+  "main": "./lib/index.cjs",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "pnpm publish --access public --no-git-checks"
@@ -14,16 +17,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@moeum/eslint-base": "workspace:*",
-    "eslint": "*",
+    "@moeum/eslint-config-base": "workspace:*",
+    "eslint": "^8",
     "prettier": "*"
   },
   "peerDependencies": {
     "typescript": "*",
-    "eslint": "*",
+    "eslint": "^8",
     "prettier": "*"
   },
-  "type": "module",
+  "type": "commonjs",
   "directories": {
     "lib": "lib"
   },

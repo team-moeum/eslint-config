@@ -11,7 +11,7 @@
     "publish:react": "turbo run deploy --filter=@moeum/eslint-react",
     "publish:next": "turbo run deploy --filter=@moeum/eslint-next",
     "publish:rn-expo": "turbo run deploy --filter=@moeum/eslint-rn-expo",
-    "publish:nest": "turbo run deploy --filter=@moeum/eslint-nest"
+    "publish:nest": "turbo run deploy --filter=@moeum/eslint-config-nest"
   },
   "devDependencies": {
     "prettier": "^3.2.5",

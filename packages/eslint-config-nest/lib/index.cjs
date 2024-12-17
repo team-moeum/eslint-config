@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   extends: ["@moeum/eslint-config-base"],
   env: {
     browser: false,
