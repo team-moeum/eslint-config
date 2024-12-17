@@ -1,12 +1,36 @@
 {
   "name": "@moeum/eslint-nest",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "@moeum/eslint-nest by moeum",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "pnpm publish --access public --no-git-checks"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@moeum/eslint-base": "workspace:*",
+    "eslint": "*",
+    "prettier": "*"
+  },
+  "peerDependencies": {
+    "typescript": "*"
+  },
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-moeum/moeum-eslint-prettier-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/team-moeum/moeum-eslint-prettier-toolkit/issues"
+  },
+  "homepage": "https://github.com/team-moeum/moeum-eslint-prettier-toolkit#readme"
 }

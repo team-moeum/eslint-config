@@ -84,7 +84,20 @@ importers:
         specifier: ^8.15.0
         version: 8.15.0(eslint@9.15.0)(typescript@5.5.4)
 
-  packages/eslint-nest: {}
+  packages/eslint-nest:
+    dependencies:
+      '@moeum/eslint-base':
+        specifier: workspace:*
+        version: link:../eslint-base
+      eslint:
+        specifier: '*'
+        version: 9.15.0
+      prettier:
+        specifier: '*'
+        version: 3.3.3
+      typescript:
+        specifier: '*'
+        version: 5.5.4
 
   packages/eslint-next:
     dependencies:
