@@ -10,7 +10,7 @@
     "publish:base": "turbo run deploy --filter=@moeum/eslint-config-base",
     "publish:react": "turbo run deploy --filter=@moeum/eslint-config-react",
     "publish:next": "turbo run deploy --filter=@moeum/eslint-config-next",
-    "publish:rn-expo": "turbo run deploy --filter=@moeum/eslint-rn-expo",
+    "publish:rn-expo": "turbo run deploy --filter=@moeum/eslint-config-rn-expo",
     "publish:nest": "turbo run deploy --filter=@moeum/eslint-config-nest"
   },
   "devDependencies": {

@@ -1,11 +1,14 @@
 {
-  "name": "@moeum/eslint-rn-expo",
+  "name": "@moeum/eslint-config-rn-expo",
   "version": "1.0.1",
   "publishConfig": {
     "access": "public"
   },
-  "description": "@moeum/eslint-rn-expo by moeum",
-  "main": "./lib/index.js",
+  "description": "@moeum/eslint-config-rn-expo by moeum",
+  "main": "./lib/index.cjs",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "pnpm publish --access public --no-git-checks"
@@ -14,18 +17,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@moeum/eslint-react": "workspace:*",
+    "@moeum/eslint-config-react": "workspace:*",
     "expo": "*",
-    "eslint": "*",
+    "eslint": "^8",
     "prettier": "*"
   },
   "peerDependencies": {
     "typescript": "*",
     "expo": "*",
-    "eslint": "*",
+    "eslint": "^8",
     "prettier": "*"
   },
-  "type": "module",
+  "type": "commonjs",
   "directories": {
     "lib": "lib"
   },
