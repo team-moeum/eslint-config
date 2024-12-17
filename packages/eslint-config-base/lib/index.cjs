@@ -19,7 +19,6 @@ module.exports = {
   rules: {
     "consistent-return": ["error", { treatUndefinedAsUnspecified: true }],
     "default-case-last": "error",
-    "func-style": ["error", "expression"],
     "no-var": "error",
     "no-console": "error",
     "no-empty": "error",
@@ -42,11 +41,9 @@ module.exports = {
       },
     ],
     "@typescript-eslint/no-for-in-array": "error",
-    "@typescript-eslint/type-annotation-spacing": "error",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-redeclare": "error",
     "@typescript-eslint/no-unused-expressions": "off",
     "@typescript-eslint/no-inferrable-types": "error",
-    "import/no-duplicates": "error",
   },
 };
