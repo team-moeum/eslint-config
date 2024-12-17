@@ -6,7 +6,8 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "publish:cli": "turbo run deploy --filter=@moeum/eslint-prettier-cli"
+    "publish:cli": "turbo run deploy --filter=@moeum/eslint-prettier-cli",
+    "publish:base": "turbo run deploy --filter=@moeum/eslint-base"
   },
   "devDependencies": {
     "prettier": "^3.2.5",

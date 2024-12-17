@@ -1,12 +1,40 @@
 {
   "name": "@moeum/eslint-base",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "@moeum/eslint-base by moeum",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "pnpm publish --access public --no-git-checks"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@typescript-eslint/parser": "^8.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint": "*",
+    "prettier": "*"
+  },
+  "peerDependencies": {
+    "typescript": "*"
+  },
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-moeum/moeum-eslint-prettier-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/team-moeum/moeum-eslint-prettier-toolkit/issues"
+  },
+  "homepage": "https://github.com/team-moeum/moeum-eslint-prettier-toolkit#readme"
 }
