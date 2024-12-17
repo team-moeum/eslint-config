@@ -1,12 +1,41 @@
 {
   "name": "@moeum/eslint-react",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "@moeum/eslint-react by moeum",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "pnpm publish --access public --no-git-checks"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@moeum/eslint-base": "workspace:*",
+    "eslint": "*",
+    "prettier": "*",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5"
+  },
+  "peerDependencies": {
+    "typescript": "*",
+    "react": "*"
+  },
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-moeum/moeum-eslint-prettier-toolkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/team-moeum/moeum-eslint-prettier-toolkit/issues"
+  },
+  "homepage": "https://github.com/team-moeum/moeum-eslint-prettier-toolkit#readme"
 }
