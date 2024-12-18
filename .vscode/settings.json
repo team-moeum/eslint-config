@@ -3,5 +3,7 @@
     {
       "mode": "auto"
     }
-  ]
+  ],
+  "files.eol": "\n",
+  "editor.formatOnSave": true
 }
