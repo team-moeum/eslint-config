@@ -6,12 +6,13 @@
   },
   "description": "eslint-prettier-cli by moeum",
   "bin": {
-    "eslint-prettier-cli": "lib/index.js"
+    "eslint-prettier-cli": "dist/index.js"
   },
-  "main": "./lib/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "pnpm publish --access public --no-git-checks"
+    "build": "tsc",
+    "deploy": "npm run build && pnpm publish --access public --no-git-checks"
   },
   "keywords": [],
   "author": "",
@@ -23,7 +24,10 @@
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "5.5.4"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/team-moeum/moeum-eslint-prettier-toolkit.git"

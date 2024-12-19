@@ -14,9 +14,14 @@ const AVAILABLE_TEMPLATES = {
   nest: "Nest.js optimized setup",
 };
 
-async function copyFiles(templateName) {
+async function copyFiles(templateName: string) {
   const currentDir = process.cwd();
-  const templateDir = path.join(__dirname, "../lib", "templates", templateName);
+  const templateDir = path.join(
+    __dirname,
+    "../templates",
+    "templates",
+    templateName,
+  );
 
   if (!fs.existsSync(templateDir)) {
     throw new Error("templateDir not found");
