@@ -1,6 +1,6 @@
 {
   "name": "@moeum/eslint-prettier-cli",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "publishConfig": {
     "access": "public"
   },
