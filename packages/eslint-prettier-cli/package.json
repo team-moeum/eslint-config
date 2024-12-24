@@ -1,6 +1,6 @@
 {
   "name": "@moeum/eslint-prettier-cli",
-  "version": "1.0.10",
+  "version": "1.0.13",
   "publishConfig": {
     "access": "public"
   },
@@ -9,9 +9,11 @@
     "eslint-prettier-cli": "lib/index.js"
   },
   "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "pnpm publish --access public --no-git-checks"
+    "build": "tsup src/index.ts --format esm --dts --minify --platform node --outDir lib",
+    "deploy": "npm run build && pnpm publish --access public --no-git-checks"
   },
   "keywords": [],
   "author": "",
@@ -23,7 +25,11 @@
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "typescript": "5.5.4"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/team-moeum/moeum-eslint-prettier-toolkit.git"
