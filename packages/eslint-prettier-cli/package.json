@@ -9,7 +9,7 @@
     "eslint-prettier-cli": "lib/index.js"
   },
   "main": "./lib/index.js",
-  "types": "lib/index.d.ts",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsup src/index.ts --format esm --dts --minify --platform node --outDir lib",
