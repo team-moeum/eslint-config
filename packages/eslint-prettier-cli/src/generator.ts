@@ -16,12 +16,7 @@ const AVAILABLE_TEMPLATES = {
 
 async function copyFiles(templateName: string) {
   const currentDir = process.cwd();
-  const templateDir = path.join(
-    __dirname,
-    "../templates",
-    "templates",
-    templateName,
-  );
+  const templateDir = path.join(__dirname, "../templates", templateName);
 
   if (!fs.existsSync(templateDir)) {
     throw new Error("templateDir not found");
