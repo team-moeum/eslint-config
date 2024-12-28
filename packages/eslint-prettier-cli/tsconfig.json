@@ -6,7 +6,8 @@
     "module": "ESNext",
     "sourceMap": true,
     "esModuleInterop": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "allowJs": true
   },
   "include": ["src"]
 }
