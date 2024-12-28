@@ -1,6 +1,6 @@
 {
   "name": "@moeum/eslint-config-rn-expo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publishConfig": {
     "access": "public"
   },
