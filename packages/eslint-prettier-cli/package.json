@@ -1,6 +1,6 @@
 {
   "name": "@moeum/eslint-prettier-cli",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "publishConfig": {
     "access": "public"
   },
@@ -19,7 +19,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^12.2.0"
+    "inquirer": "^12.2.0",
+    "@moeum/eslint-config-base": "workspace:*",
+    "@moeum/eslint-config-nest": "workspace:*",
+    "@moeum/eslint-config-next": "workspace:*",
+    "@moeum/eslint-config-react": "workspace:*",
+    "@moeum/eslint-config-rn-expo": "workspace:*"
   },
   "type": "module",
   "directories": {

@@ -233,6 +233,21 @@ importers:
 
   packages/eslint-prettier-cli:
     dependencies:
+      '@moeum/eslint-config-base':
+        specifier: workspace:*
+        version: link:../eslint-config-base
+      '@moeum/eslint-config-nest':
+        specifier: workspace:*
+        version: link:../eslint-config-nest
+      '@moeum/eslint-config-next':
+        specifier: workspace:*
+        version: link:../eslint-config-next
+      '@moeum/eslint-config-react':
+        specifier: workspace:*
+        version: link:../eslint-config-react
+      '@moeum/eslint-config-rn-expo':
+        specifier: workspace:*
+        version: link:../eslint-config-rn-expo
       inquirer:
         specifier: ^12.2.0
         version: 12.2.0(@types/node@22.10.2)
