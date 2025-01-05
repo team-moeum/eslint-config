@@ -1,7 +1,7 @@
-import inquirer from "inquirer";
 import { __dirname, AVAILABLE_TEMPLATES, TemplateTypes } from "./contants";
 import { copyFiles } from "./copyFiles";
-import { udpateGitingore } from "./updateFiles";
+import { udpateGitingore, udpatePackageJson } from "./updateFiles";
+import inquirer from "inquirer";
 
 async function generator() {
   try {
@@ -27,6 +27,7 @@ async function generator() {
     console.log(`Generating ${selectedTemplate} configuration...`);
     copyFiles(currentDir, selectedTemplate);
     udpateGitingore(currentDir, selectedTemplate);
+    udpatePackageJson(currentDir, selectedTemplate);
   } catch (err) {
     console.error("Error", err);
   }

@@ -12,4 +12,12 @@ export const AVAILABLE_TEMPLATES = {
   nest: "Nest.js optimized setup",
 };
 
+export const CONFIG_TEMPLATES = {
+  base: "@moeum/eslint-config-base",
+  react: "@moeum/eslint-config-react",
+  next: "@moeum/eslint-config-next",
+  rn: "@moeum/eslint-config-rn-expo",
+  nest: "@moeum/eslint-config-nest",
+};
+
 export type TemplateTypes = keyof typeof AVAILABLE_TEMPLATES;
